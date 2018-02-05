@@ -33,7 +33,9 @@ class Hello extends AppCompatActivity {
       case _ ⇒ super.onOptionsItemSelected(item)
     }
 
+
   override def onBackPressed(): Unit = {
+    this.thread.finisci()
     super.onBackPressed()
   }
 
